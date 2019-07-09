@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.705
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JsonExts.JsonPath", "JsonExts.JsonPath\JsonExts.JsonPath.csproj", "{8B80D265-E555-485D-9C57-B78F17CDD40D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JsonExts.JsonPath.Tests", "JsonExts.JsonPath.Tests\JsonExts.JsonPath.Tests.csproj", "{F53D47F3-6E2C-4FE4-9A39-2A1B056DD6DB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{271650AF-F8D2-4169-818B-0E855FB0140D}"
+	ProjectSection(SolutionItems) = preProject
+		..\LICENSE.md = ..\LICENSE.md
+		..\README.md = ..\README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8B80D265-E555-485D-9C57-B78F17CDD40D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B80D265-E555-485D-9C57-B78F17CDD40D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B80D265-E555-485D-9C57-B78F17CDD40D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B80D265-E555-485D-9C57-B78F17CDD40D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F53D47F3-6E2C-4FE4-9A39-2A1B056DD6DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F53D47F3-6E2C-4FE4-9A39-2A1B056DD6DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F53D47F3-6E2C-4FE4-9A39-2A1B056DD6DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F53D47F3-6E2C-4FE4-9A39-2A1B056DD6DB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8C11E15B-9C34-4652-9502-44E059316CFE}
+	EndGlobalSection
+EndGlobal

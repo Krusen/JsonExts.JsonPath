@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard1.3;netstandard2.0</TargetFrameworks>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <!--<NoWarn>1591</NoWarn>-->
+    <SemVer Condition="'$(SemVer)' == ''">1.0.0</SemVer>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageId>JsonExts.JsonPath</PackageId>
+    <Version>$(SemVer)</Version>
+    <Authors>Søren Kruse</Authors>
+    <Company />
+    <Product>JsonExts.JsonPath</Product>
+    <Description>Adds support for mapping properties using JSONPath expresions.</Description>
+    <PackageLicenseExpression>Unlicense</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/Krusen/JsonExts</PackageProjectUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/Krusen/JsonExts/master/assets/package-icon.png</PackageIconUrl>
+    <RepositoryUrl>https://github.com/Krusen/JsonExts</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <!--<PackageReleaseNotes></PackageReleaseNotes>-->
+    <PackageTags>jsonpath;json path;json</PackageTags>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <IncludeSource>True</IncludeSource>
+    <IncludeSymbols>True</IncludeSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
+  </ItemGroup>
+
+</Project>
