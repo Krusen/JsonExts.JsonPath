@@ -15,9 +15,9 @@
     <Product>JsonExts.JsonPath</Product>
     <Description>Adds support for mapping properties using JSONPath expresions.</Description>
     <PackageLicenseExpression>Unlicense</PackageLicenseExpression>
-    <PackageProjectUrl>https://github.com/Krusen/JsonExts</PackageProjectUrl>
-    <PackageIconUrl>https://raw.githubusercontent.com/Krusen/JsonExts/master/assets/package-icon.png</PackageIconUrl>
-    <RepositoryUrl>https://github.com/Krusen/JsonExts</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/Krusen/JsonExts.JsonPath</PackageProjectUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/Krusen/JsonExts.JsonPath/master/assets/package-icon.png</PackageIconUrl>
+    <RepositoryUrl>https://github.com/Krusen/JsonExts.JsonPath</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <!--<PackageReleaseNotes></PackageReleaseNotes>-->
     <PackageTags>jsonpath;json path;json</PackageTags>
