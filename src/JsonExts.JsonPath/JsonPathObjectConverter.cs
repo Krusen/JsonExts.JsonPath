@@ -225,8 +225,9 @@ namespace JsonExts.JsonPath
                         return;
                     }
 
-                    // Type is not nullable, create default value instead
-                    if (Nullable.GetUnderlyingType(property.PropertyType) == null)
+                    // Type is value type and not nullable, create default value instead
+                    var isValueType = property.PropertyType.GetTypeInfo().IsValueType;
+                    if (isValueType && Nullable.GetUnderlyingType(property.PropertyType) == null)
                         value = Activator.CreateInstance(property.PropertyType);
                 }
             }

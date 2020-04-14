@@ -356,6 +356,30 @@ namespace JsonExts.JsonPath.Tests
             obj.Stub.NormalValue.Should().Be(null);
         }
 
+        [Fact]
+        public void Deserialize_InvalidPath_String_DoesNotThrow()
+        {
+            Func<InvalidPathStub.String> act = () => Deserialize<InvalidPathStub.String>(InvalidPathStub.Json);
+
+            act.Should().NotThrow();
+        }
+
+        [Fact]
+        public void Deserialize_InvalidPath_Int_DoesNotThrow()
+        {
+            Func<InvalidPathStub.Int> act = () => Deserialize<InvalidPathStub.Int>(InvalidPathStub.Json);
+
+            act.Should().NotThrow();
+        }
+
+        [Fact]
+        public void Deserialize_InvalidPath_Nullable_DoesNotThrow()
+        {
+            Func<InvalidPathStub.Nullable> act = () => Deserialize<InvalidPathStub.Nullable>(InvalidPathStub.Json);
+
+            act.Should().NotThrow();
+        }
+
         #endregion
 
         #region Serialize Tests
@@ -658,6 +682,38 @@ namespace JsonExts.JsonPath.Tests
             public int? Value { get; set; }
 
             public int? NormalValue { get; set; }
+        }
+
+        private class InvalidPathStub
+        {
+            public const string Json = "{ values: null }";
+
+            public class String
+            {
+                [JsonPath("values.string")]
+                public string InvalidPathPart { get; set; }
+
+                [JsonPath("invalid.path.string")]
+                public string InvalidPath { get; set; }
+            }
+
+            public class Int
+            {
+                [JsonPath("values.int")]
+                public int InvalidPathPart { get; set; }
+
+                [JsonPath("invalid.path.int")]
+                public int InvalidPath { get; set; }
+            }
+
+            public class Nullable
+            {
+                [JsonPath("values.int")]
+                public int? InvalidPathPart { get; set; }
+
+                [JsonPath("invalid.path.int")]
+                public int? InvalidPath { get; set; }
+            }
         }
 
         #endregion
