@@ -13,18 +13,23 @@
     <Authors>Søren Kruse</Authors>
     <Company />
     <Product>JsonExts.JsonPath</Product>
-    <Description>Adds support for mapping properties using JSONPath expresions.</Description>
+    <Description>Adds support to Newtonsoft.Json for mapping properties using JSONPath expresions.</Description>
     <PackageLicenseExpression>Unlicense</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/Krusen/JsonExts.JsonPath</PackageProjectUrl>
     <PackageIconUrl>https://raw.githubusercontent.com/Krusen/JsonExts.JsonPath/master/assets/package-icon.png</PackageIconUrl>
+    <PackageIcon>package-icon.png</PackageIcon>
     <RepositoryUrl>https://github.com/Krusen/JsonExts.JsonPath</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <!--<PackageReleaseNotes></PackageReleaseNotes>-->
+    <PackageReleaseNotes>Fixed issue with non-value type properties when path or parts of path was missing</PackageReleaseNotes>
     <PackageTags>jsonpath;json path;json</PackageTags>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <IncludeSource>True</IncludeSource>
     <IncludeSymbols>True</IncludeSymbols>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="../../assets/package-icon.png" Pack="true" PackagePath="/" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
